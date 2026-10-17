@@ -1,0 +1,1723 @@
+[
+  {
+    "path": "/api/healthz",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "list": [],
+        "items": [],
+        "records": [],
+        "total": 0,
+        "page": 1,
+        "pageSize": 20,
+        "totalPages": 1,
+        "hasMore": false
+      },
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/auth/register-policy",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "ipLimit": 3,
+        "windowHours": 24,
+        "unlimited": false,
+        "used": 0,
+        "remaining": 3,
+        "blocked": false,
+        "exceeded": false,
+        "ip": "120.231.250.234",
+        "contactHint": "如需继续注册请联系总部管理员（管理台 /admin.html，账号 admin）或经秘书处内线 8001 申请额度"
+      },
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/settings/about",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "siteName": "G.H.Q. GHOST PROTOCOL",
+        "version": "2.0",
+        "buildDate": "2026-10-10",
+        "intro": "本站为「全球灵异事件处理总部」内部指挥协作系统，用于灵异事件的情报归档、任务派发、区域协同与成员交流。",
+        "features": [
+          "移动端 / 桌面端自适应",
+          "全站中文界面",
+          "权限分级访问"
+        ],
+        "changelog": "v2.0 · 新增内容管理中台，23 个业务模块支持上新发布与修订",
+        "contact": "secretariat@ghq.ghost",
+        "copyright": "© 2026 G.H.Q. Command"
+      },
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/settings/maintenance",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "enabled": false,
+        "message": "系统例行维护中，预计 02:00-06:00 恢复。",
+        "startAt": null,
+        "endAt": null
+      },
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/home/stats",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "totalDeaths": 5180912,
+        "totalMissing": 2898582,
+        "populationAtRisk": 7687979,
+        "activeEvents": 28,
+        "todayDeaths": 19625,
+        "todayMissing": 21639,
+        "today": {
+          "totalDeaths": 19625,
+          "totalMissing": 21639,
+          "populationAtRisk": 361684,
+          "activeEvents": 12
+        },
+        "deltas": {
+          "totalDeaths": 56662,
+          "totalMissing": 44419,
+          "populationAtRisk": 501672,
+          "activeEvents": 12
+        },
+        "baseline": {
+          "at": "2026-10-17T15:16:50.252Z",
+          "totalDeaths": 5159987,
+          "totalMissing": 2876058,
+          "populationAtRisk": 7150154,
+          "activeEvents": 29
+        },
+        "detail": {
+          "confirmedBase": 4940461,
+          "reportedDeaths": 3777,
+          "missingBase": 2739052,
+          "reportedMissing": 13966,
+          "protectedPopulation": 12840000,
+          "popRatio": 0.4643,
+          "activeZones": 26,
+          "totalZones": 56,
+          "processingReports": 2,
+          "recentEvents": 12,
+          "ratedPopulation": 832000,
+          "recentDeaths": 3305,
+          "recentMissing": 11602,
+          "todayNewCasualties": 12,
+          "todayNewIncidents": 6,
+          "drift": {
+            "at": "2026-10-17T16:31:11.908Z",
+            "elapsedMin": 409.15,
+            "deaths": 236674,
+            "missing": 145564,
+            "population": 894551,
+            "ratePerMin": {
+              "deaths": 37.04,
+              "missing": 22.78,
+              "population": 140
+            }
+          },
+          "rolls": 6
+        },
+        "autoGrow": true,
+        "drift": {
+          "at": "2026-10-17T16:31:11.908Z",
+          "deathsPerMin": 37.04,
+          "missingPerMin": 22.78,
+          "populationPerMin": 140
+        },
+        "growth": {
+          "enabled": true,
+          "speed": 1,
+          "perMin": {
+            "deaths": 37.0403,
+            "missing": 22.7813,
+            "pop": 140
+          },
+          "perHour": {
+            "deaths": 2222,
+            "missing": 1367,
+            "pop": 8400
+          },
+          "perDay": {
+            "deaths": 53338,
+            "missing": 32805,
+            "pop": 201600
+          },
+          "text": "当前：死亡 +2222 / 小时，失踪 +1367 / 小时，受威胁人口 +8400 / 小时（约 53338 / 32805 / 201600 每天，倍率 ×1）"
+        },
+        "source": "live",
+        "updatedAt": "2026-10-17T23:20:21.000Z"
+      },
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/dashboard/stats",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "byLevel": [
+          {
+            "level": "S",
+            "count": 2
+          },
+          {
+            "level": "A",
+            "count": 6
+          },
+          {
+            "level": "B",
+            "count": 12
+          },
+          {
+            "level": "C",
+            "count": 21
+          },
+          {
+            "level": "D",
+            "count": 15
+          }
+        ],
+        "byStatus": [
+          {
+            "status": "active",
+            "count": 26
+          },
+          {
+            "status": "contained",
+            "count": 30
+          }
+        ],
+        "byContinent": [
+          {
+            "continent": "asia",
+            "count": 18
+          },
+          {
+            "continent": "europe",
+            "count": 11
+          },
+          {
+            "continent": "americas",
+            "count": 9
+          },
+          {
+            "continent": "africa",
+            "count": 6
+          },
+          {
+            "continent": "oceania",
+            "count": 12
+          }
+        ],
+        "missionTrend": [
+          {
+            "date": "2026-10-03",
+            "created": 4,
+            "completed": 3
+          },
+          {
+            "date": "2026-10-04",
+            "created": 5,
+            "completed": 4
+          },
+          {
+            "date": "2026-10-05",
+            "created": 6,
+            "completed": 5
+          },
+          {
+            "date": "2026-10-06",
+            "created": 4,
+            "completed": 6
+          },
+          {
+            "date": "2026-10-07",
+            "created": 5,
+            "completed": 3
+          },
+          {
+            "date": "2026-10-08",
+            "created": 6,
+            "completed": 4
+          },
+          {
+            "date": "2026-10-09",
+            "created": 4,
+            "completed": 5
+          }
+        ]
+      },
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/ghost-zones?pageSize=3",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "list": [
+          {
+            "id": "aa5c44f1-baa7-47a5-a886-3f6947252bb1",
+            "zoneCode": "G-013",
+            "name": "血月修道院·伦敦",
+            "level": "extreme",
+            "latitude": 51.51,
+            "longitude": -0.13,
+            "radiusKm": 76.6,
+            "status": "active",
+            "relatedEventCode": null,
+            "continent": "europe",
+            "spreadTrend": "扩散中",
+            "isEventMarker": false,
+            "historyRadius": [
+              {
+                "date": "2026-03-30",
+                "radiusKm": 11.49
+              },
+              {
+                "date": "2026-05-14",
+                "radiusKm": 41.68
+              },
+              {
+                "date": "2026-06-28",
+                "radiusKm": 60.83
+              },
+              {
+                "date": "2026-08-12",
+                "radiusKm": 72.6
+              },
+              {
+                "date": "2026-09-26",
+                "radiusKm": 76.6
+              }
+            ]
+          },
+          {
+            "id": "ba491b33-c835-4499-9f39-0b13843d7586",
+            "zoneCode": "S-001",
+            "name": "鬼邮局",
+            "level": "extreme",
+            "latitude": 31.23,
+            "longitude": 121.47,
+            "radiusKm": 50,
+            "status": "active",
+            "relatedEventCode": "S-001",
+            "continent": "asia",
+            "spreadTrend": "扩散中",
+            "isEventMarker": true,
+            "historyRadius": []
+          },
+          {
+            "id": "265c5865-d7f9-4b50-bfc1-260d2a78e4d4",
+            "zoneCode": "G-001",
+            "name": "幽灵井·东京",
+            "level": "extreme",
+            "latitude": 35.7,
+            "longitude": 139.72,
+            "radiusKm": 44.3,
+            "status": "active",
+            "relatedEventCode": null,
+            "continent": "asia",
+            "spreadTrend": "扩散中",
+            "isEventMarker": false,
+            "historyRadius": [
+              {
+                "date": "2026-03-30",
+                "radiusKm": 6.64
+              },
+              {
+                "date": "2026-05-05",
+                "radiusKm": 21.36
+              },
+              {
+                "date": "2026-06-10",
+                "radiusKm": 31.26
+              },
+              {
+                "date": "2026-07-16",
+                "radiusKm": 38.43
+              },
+              {
+                "date": "2026-08-22",
+                "radiusKm": 42.82
+              },
+              {
+                "date": "2026-09-26",
+                "radiusKm": 44.3
+              }
+            ]
+          }
+        ],
+        "items": [
+          {
+            "id": "aa5c44f1-baa7-47a5-a886-3f6947252bb1",
+            "zoneCode": "G-013",
+            "name": "血月修道院·伦敦",
+            "level": "extreme",
+            "latitude": 51.51,
+            "longitude": -0.13,
+            "radiusKm": 76.6,
+            "status": "active",
+            "relatedEventCode": null,
+            "continent": "europe",
+            "spreadTrend": "扩散中",
+            "isEventMarker": false,
+            "historyRadius": [
+              {
+                "date": "2026-03-30",
+                "radiusKm": 11.49
+              },
+              {
+                "date": "2026-05-14",
+                "radiusKm": 41.68
+              },
+              {
+                "date": "2026-06-28",
+                "radiusKm": 60.83
+              },
+              {
+                "date": "2026-08-12",
+                "radiusKm": 72.6
+              },
+              {
+                "date": "2026-09-26",
+                "radiusKm": 76.6
+              }
+            ]
+          },
+          {
+            "id": "ba491b33-c835-4499-9f39-0b13843d7586",
+            "zoneCode": "S-001",
+            "name": "鬼邮局",
+            "level": "extreme",
+            "latitude": 31.23,
+            "longitude": 121.47,
+            "radiusKm": 50,
+            "status": "active",
+            "relatedEventCode": "S-001",
+            "continent": "asia",
+            "spreadTrend": "扩散中",
+            "isEventMarker": true,
+            "historyRadius": []
+          },
+          {
+            "id": "265c5865-d7f9-4b50-bfc1-260d2a78e4d4",
+            "zoneCode": "G-001",
+            "name": "幽灵井·东京",
+            "level": "extreme",
+            "latitude": 35.7,
+            "longitude": 139.72,
+            "radiusKm": 44.3,
+            "status": "active",
+            "relatedEventCode": null,
+            "continent": "asia",
+            "spreadTrend": "扩散中",
+            "isEventMarker": false,
+            "historyRadius": [
+              {
+                "date": "2026-03-30",
+                "radiusKm": 6.64
+              },
+              {
+                "date": "2026-05-05",
+                "radiusKm": 21.36
+              },
+              {
+                "date": "2026-06-10",
+                "radiusKm": 31.26
+              },
+              {
+                "date": "2026-07-16",
+                "radiusKm": 38.43
+              },
+              {
+                "date": "2026-08-22",
+                "radiusKm": 42.82
+              },
+              {
+                "date": "2026-09-26",
+                "radiusKm": 44.3
+              }
+            ]
+          }
+        ],
+        "records": [
+          {
+            "id": "aa5c44f1-baa7-47a5-a886-3f6947252bb1",
+            "zoneCode": "G-013",
+            "name": "血月修道院·伦敦",
+            "level": "extreme",
+            "latitude": 51.51,
+            "longitude": -0.13,
+            "radiusKm": 76.6,
+            "status": "active",
+            "relatedEventCode": null,
+            "continent": "europe",
+            "spreadTrend": "扩散中",
+            "isEventMarker": false,
+            "historyRadius": [
+              {
+                "date": "2026-03-30",
+                "radiusKm": 11.49
+              },
+              {
+                "date": "2026-05-14",
+                "radiusKm": 41.68
+              },
+              {
+                "date": "2026-06-28",
+                "radiusKm": 60.83
+              },
+              {
+                "date": "2026-08-12",
+                "radiusKm": 72.6
+              },
+              {
+                "date": "2026-09-26",
+                "radiusKm": 76.6
+              }
+            ]
+          },
+          {
+            "id": "ba491b33-c835-4499-9f39-0b13843d7586",
+            "zoneCode": "S-001",
+            "name": "鬼邮局",
+            "level": "extreme",
+            "latitude": 31.23,
+            "longitude": 121.47,
+            "radiusKm": 50,
+            "status": "active",
+            "relatedEventCode": "S-001",
+            "continent": "asia",
+            "spreadTrend": "扩散中",
+            "isEventMarker": true,
+            "historyRadius": []
+          },
+          {
+            "id": "265c5865-d7f9-4b50-bfc1-260d2a78e4d4",
+            "zoneCode": "G-001",
+            "name": "幽灵井·东京",
+            "level": "extreme",
+            "latitude": 35.7,
+            "longitude": 139.72,
+            "radiusKm": 44.3,
+            "status": "active",
+            "relatedEventCode": null,
+            "continent": "asia",
+            "spreadTrend": "扩散中",
+            "isEventMarker": false,
+            "historyRadius": [
+              {
+                "date": "2026-03-30",
+                "radiusKm": 6.64
+              },
+              {
+                "date": "2026-05-05",
+                "radiusKm": 21.36
+              },
+              {
+                "date": "2026-06-10",
+                "radiusKm": 31.26
+              },
+              {
+                "date": "2026-07-16",
+                "radiusKm": 38.43
+              },
+              {
+                "date": "2026-08-22",
+                "radiusKm": 42.82
+              },
+              {
+                "date": "2026-09-26",
+                "radiusKm": 44.3
+              }
+            ]
+          }
+        ],
+        "total": 56,
+        "page": 1,
+        "pageSize": 3,
+        "totalPages": 19,
+        "hasMore": true
+      },
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/events?page=1&pageSize=3",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "list": [
+          {
+            "id": "ev-mvcriqc236m",
+            "eventCode": "EVT-2026-1122",
+            "name": "鬼域肃清",
+            "level": "S",
+            "location": "台湾",
+            "status": "active",
+            "occurredAt": "2026-10-17T18:01:20.000Z",
+            "deathToll": 0,
+            "missingCount": 0,
+            "content": "百年乱世余孽、域外诡祟、分裂邪灵，借时局缝隙，盘踞海峡一隅。\n它们制造虚妄的“独立诡境”，编织虚假的割裂认知，以鬼魅话术蛊惑人心。",
+            "reporter": "九天应元雷声普化天尊",
+            "reporterId": "u-mvcqnuo745s",
+            "createdAt": "2026-10-17T19:01:20.000Z",
+            "reviewComment": "已受理，情报部研判中。",
+            "killingPattern": "[机密] 该异常已确认具备主动猎杀行为。目标须同时满足三个条件：夜间（23:00—04:00）独处、身处无照明封闭空间、且连续三次听见来源不明的声响。三者齐备后目标进入 72 小时危险窗口期，窗口期内任何回头确认声源方向的动作都会立即触发异常。处置建议：夜间禁止单人行动，全员佩戴三级屏蔽贴片。",
+            "timeline": [
+              {
+                "at": "2026-10-17T18:01:20.000Z",
+                "text": "首次目击 · 台湾报告高强度异常信号，值班组现场记录在案。"
+              },
+              {
+                "at": "2026-10-18T00:01:20.000Z",
+                "text": "扩散预警 · 同一区域 200 米范围内出现第二起同类目击记录，确认非孤例。"
+              },
+              {
+                "at": "2026-10-18T18:01:20.000Z",
+                "text": "总部研判 · 情报部将事件等级定为 S 级，纳入重点监控序列。"
+              },
+              {
+                "at": "2026-10-19T18:01:20.000Z",
+                "text": "封锁行动 · 机动队已进驻并设立警戒线，周边人员完成疏散。"
+              }
+            ],
+            "handler": "第九机动队 · 代号「渡鸦」",
+            "relatedArtifacts": [
+              "青铜铃"
+            ]
+          },
+          {
+            "id": "ev-mvcpp9cr3i1",
+            "eventCode": "EVT-2026-1121",
+            "name": "换皮杀人事件",
+            "level": "B",
+            "location": "重庆市城郊被封死的废弃老楼",
+            "status": "active",
+            "occurredAt": "2026-10-17T17:10:25.000Z",
+            "deathToll": 3,
+            "missingCount": 0,
+            "content": "上报时间：2021年9月23日\n\n异常现象：上报人员为两名警方人员，四日前接到了失踪报案，失踪者为一名偷偷前往废弃楼内探险的少年，二人破开封墙进入搜寻，在三楼楼道遇见了一个背对着他们的少年，体态、声音、衣着，以及转过来后的样貌，与失踪者完全匹配。\n二人并未察觉异样，带着少年离开老楼，回到少年家中。\n三天后少年父母报警，根据少年父母描述，少年回家后三天并未睡觉、吃饭、行动僵硬，没用表情波动、并且在深夜睡醒后发现少年就站在卧室门口静静的看着他们，警方通过检查以及疏导，并未发现特殊异样，随即上报。\n第四天我方人员在了解事情后前往废弃老楼探查，在四楼的一件房间内发现了人体尸块，只有骨头和血肉，没有人皮。经过拼装，大致能看出是一名年轻男子遗体，随后立即前往失踪少年家中，破门后发现少年失踪，地上遍布尸块，同样为骨头和血肉，并未发现人皮，拼装后并拿去检测，均可确定尸块为失踪少年的父母。\n事件升级，总部接管。",
+            "reporter": "白晓",
+            "reporterId": "u-mvco44fv3nm",
+            "createdAt": "2026-10-17T18:10:25.000Z",
+            "reviewComment": "已受理，情报部研判中。",
+            "killingPattern": "异常在目标情绪剧烈波动（恐惧、愧疚、强烈悔意）时响应，会复现其近期回忆中最不愿面对的场景。连续两晚出现同一场景后，异常开始外溢至周边 200 米范围。受影响人员须立即接受三级心理隔离，观察期 7 日。",
+            "timeline": [
+              {
+                "at": "2026-10-17T17:10:25.000Z",
+                "text": "首次目击 · 重庆市城郊被封死的废弃老楼报告异常征兆，值班组现场记录在案。"
+              },
+              {
+                "at": "2026-10-17T23:10:25.000Z",
+                "text": "扩散预警 · 同一区域 200 米范围内出现第二起同类目击记录，确认非孤例。"
+              },
+              {
+                "at": "2026-10-18T17:10:25.000Z",
+                "text": "总部研判 · 情报部将事件等级定为 B 级，纳入常规监控序列。"
+              },
+              {
+                "at": "2026-10-20T17:10:25.000Z",
+                "text": "观察处置 · 已布置长期观测点位，等待异常自然消散。"
+              }
+            ],
+            "handler": "区域驻防组 · 代号「折线」",
+            "relatedArtifacts": [
+              "青铜铃"
+            ]
+          },
+          {
+            "id": "ev-mvcma6l4114",
+            "eventCode": "EVT-2026-1120",
+            "name": "女生宿舍诡异梦魇",
+            "level": "C",
+            "location": "太原市某大学女生宿舍",
+            "status": "active",
+            "occurredAt": "2026-10-17T15:34:43.000Z",
+            "deathToll": 0,
+            "missingCount": 214,
+            "content": "目击时间：连续多日夜间睡眠时段\n异常现象：该高校整栋女生宿舍楼爆发群体性梦魇，多名宿生睡眠期间出现睡眠瘫痪，梦中统一目击同一黑衣男性人影；夜间可听见床边陌生呼吸声，睡前锁闭的衣柜清晨会自动出现缝隙。异象可跨楼层扩散，部分离校学生依旧会被异象纠缠，现实场景中目击该黑衣男子，但所有监控均无法捕捉目标。多名受侵扰学生逐步出现严重幻视幻听、精神崩溃，多名学生夜间冲出学校走失。溯源观测发现，群体梦魇视野内的工厂天花板，实际对应太平间停尸柜内部顶板，疑似存在跨点位的空间异常映射。\n伤亡情况：目前无人员死亡，多名宿舍当事人精神失常并多数丧失正常生活能力或走失。\n现场处置：由校内受影响人员线上上报，暂未对整栋宿舍楼实施封锁隔离；多名宿生的口述记录、宿舍及电梯监控副本已标记归档，暂未捕获异常实体影像。\n遗留风险：异常具备群体扩散、跨场景跟随特性，不受空间转移限制，实体源头暂未锁定，存在进一步扩散感染其余人员的高风险，建议对整栋宿舍楼与所有发病当事人执行长期不间断监测。",
+            "reporter": "芊甜",
+            "reporterId": "u-mvcjkuzp36h",
+            "createdAt": "2026-10-17T16:34:43.000Z",
+            "reviewComment": "已受理，情报部研判中。",
+            "killingPattern": "异常与目标的行为习惯呈负相关：目标越刻意回避，异常出现的频率越高。反向验证显示，目标主动接近并记录时异常会暂时沉寂，可用于短时压制。",
+            "timeline": [
+              {
+                "at": "2026-10-17T15:34:43.000Z",
+                "text": "首次目击 · 太原市某大学女生宿舍报告异常征兆，值班组现场记录在案。"
+              },
+              {
+                "at": "2026-10-17T21:34:43.000Z",
+                "text": "扩散预警 · 同一区域 200 米范围内出现第二起同类目击记录，确认非孤例。"
+              },
+              {
+                "at": "2026-10-18T15:34:43.000Z",
+                "text": "总部研判 · 情报部将事件等级定为 C 级，纳入常规监控序列。"
+              },
+              {
+                "at": "2026-10-20T15:34:43.000Z",
+                "text": "观察处置 · 已布置长期观测点位，等待异常自然消散。"
+              }
+            ],
+            "handler": "第十二机动队 · 代号「冷杉」",
+            "relatedArtifacts": [
+              "裂纹罗盘",
+              "青铜铃"
+            ]
+          }
+        ],
+        "items": [
+          {
+            "id": "ev-mvcriqc236m",
+            "eventCode": "EVT-2026-1122",
+            "name": "鬼域肃清",
+            "level": "S",
+            "location": "台湾",
+            "status": "active",
+            "occurredAt": "2026-10-17T18:01:20.000Z",
+            "deathToll": 0,
+            "missingCount": 0,
+            "content": "百年乱世余孽、域外诡祟、分裂邪灵，借时局缝隙，盘踞海峡一隅。\n它们制造虚妄的“独立诡境”，编织虚假的割裂认知，以鬼魅话术蛊惑人心。",
+            "reporter": "九天应元雷声普化天尊",
+            "reporterId": "u-mvcqnuo745s",
+            "createdAt": "2026-10-17T19:01:20.000Z",
+            "reviewComment": "已受理，情报部研判中。",
+            "killingPattern": "[机密] 该异常已确认具备主动猎杀行为。目标须同时满足三个条件：夜间（23:00—04:00）独处、身处无照明封闭空间、且连续三次听见来源不明的声响。三者齐备后目标进入 72 小时危险窗口期，窗口期内任何回头确认声源方向的动作都会立即触发异常。处置建议：夜间禁止单人行动，全员佩戴三级屏蔽贴片。",
+            "timeline": [
+              {
+                "at": "2026-10-17T18:01:20.000Z",
+                "text": "首次目击 · 台湾报告高强度异常信号，值班组现场记录在案。"
+              },
+              {
+                "at": "2026-10-18T00:01:20.000Z",
+                "text": "扩散预警 · 同一区域 200 米范围内出现第二起同类目击记录，确认非孤例。"
+              },
+              {
+                "at": "2026-10-18T18:01:20.000Z",
+                "text": "总部研判 · 情报部将事件等级定为 S 级，纳入重点监控序列。"
+              },
+              {
+                "at": "2026-10-19T18:01:20.000Z",
+                "text": "封锁行动 · 机动队已进驻并设立警戒线，周边人员完成疏散。"
+              }
+            ],
+            "handler": "第九机动队 · 代号「渡鸦」",
+            "relatedArtifacts": [
+              "青铜铃"
+            ]
+          },
+          {
+            "id": "ev-mvcpp9cr3i1",
+            "eventCode": "EVT-2026-1121",
+            "name": "换皮杀人事件",
+            "level": "B",
+            "location": "重庆市城郊被封死的废弃老楼",
+            "status": "active",
+            "occurredAt": "2026-10-17T17:10:25.000Z",
+            "deathToll": 3,
+            "missingCount": 0,
+            "content": "上报时间：2021年9月23日\n\n异常现象：上报人员为两名警方人员，四日前接到了失踪报案，失踪者为一名偷偷前往废弃楼内探险的少年，二人破开封墙进入搜寻，在三楼楼道遇见了一个背对着他们的少年，体态、声音、衣着，以及转过来后的样貌，与失踪者完全匹配。\n二人并未察觉异样，带着少年离开老楼，回到少年家中。\n三天后少年父母报警，根据少年父母描述，少年回家后三天并未睡觉、吃饭、行动僵硬，没用表情波动、并且在深夜睡醒后发现少年就站在卧室门口静静的看着他们，警方通过检查以及疏导，并未发现特殊异样，随即上报。\n第四天我方人员在了解事情后前往废弃老楼探查，在四楼的一件房间内发现了人体尸块，只有骨头和血肉，没有人皮。经过拼装，大致能看出是一名年轻男子遗体，随后立即前往失踪少年家中，破门后发现少年失踪，地上遍布尸块，同样为骨头和血肉，并未发现人皮，拼装后并拿去检测，均可确定尸块为失踪少年的父母。\n事件升级，总部接管。",
+            "reporter": "白晓",
+            "reporterId": "u-mvco44fv3nm",
+            "createdAt": "2026-10-17T18:10:25.000Z",
+            "reviewComment": "已受理，情报部研判中。",
+            "killingPattern": "异常在目标情绪剧烈波动（恐惧、愧疚、强烈悔意）时响应，会复现其近期回忆中最不愿面对的场景。连续两晚出现同一场景后，异常开始外溢至周边 200 米范围。受影响人员须立即接受三级心理隔离，观察期 7 日。",
+            "timeline": [
+              {
+                "at": "2026-10-17T17:10:25.000Z",
+                "text": "首次目击 · 重庆市城郊被封死的废弃老楼报告异常征兆，值班组现场记录在案。"
+              },
+              {
+                "at": "2026-10-17T23:10:25.000Z",
+                "text": "扩散预警 · 同一区域 200 米范围内出现第二起同类目击记录，确认非孤例。"
+              },
+              {
+                "at": "2026-10-18T17:10:25.000Z",
+                "text": "总部研判 · 情报部将事件等级定为 B 级，纳入常规监控序列。"
+              },
+              {
+                "at": "2026-10-20T17:10:25.000Z",
+                "text": "观察处置 · 已布置长期观测点位，等待异常自然消散。"
+              }
+            ],
+            "handler": "区域驻防组 · 代号「折线」",
+            "relatedArtifacts": [
+              "青铜铃"
+            ]
+          },
+          {
+            "id": "ev-mvcma6l4114",
+            "eventCode": "EVT-2026-1120",
+            "name": "女生宿舍诡异梦魇",
+            "level": "C",
+            "location": "太原市某大学女生宿舍",
+            "status": "active",
+            "occurredAt": "2026-10-17T15:34:43.000Z",
+            "deathToll": 0,
+            "missingCount": 214,
+            "content": "目击时间：连续多日夜间睡眠时段\n异常现象：该高校整栋女生宿舍楼爆发群体性梦魇，多名宿生睡眠期间出现睡眠瘫痪，梦中统一目击同一黑衣男性人影；夜间可听见床边陌生呼吸声，睡前锁闭的衣柜清晨会自动出现缝隙。异象可跨楼层扩散，部分离校学生依旧会被异象纠缠，现实场景中目击该黑衣男子，但所有监控均无法捕捉目标。多名受侵扰学生逐步出现严重幻视幻听、精神崩溃，多名学生夜间冲出学校走失。溯源观测发现，群体梦魇视野内的工厂天花板，实际对应太平间停尸柜内部顶板，疑似存在跨点位的空间异常映射。\n伤亡情况：目前无人员死亡，多名宿舍当事人精神失常并多数丧失正常生活能力或走失。\n现场处置：由校内受影响人员线上上报，暂未对整栋宿舍楼实施封锁隔离；多名宿生的口述记录、宿舍及电梯监控副本已标记归档，暂未捕获异常实体影像。\n遗留风险：异常具备群体扩散、跨场景跟随特性，不受空间转移限制，实体源头暂未锁定，存在进一步扩散感染其余人员的高风险，建议对整栋宿舍楼与所有发病当事人执行长期不间断监测。",
+            "reporter": "芊甜",
+            "reporterId": "u-mvcjkuzp36h",
+            "createdAt": "2026-10-17T16:34:43.000Z",
+            "reviewComment": "已受理，情报部研判中。",
+            "killingPattern": "异常与目标的行为习惯呈负相关：目标越刻意回避，异常出现的频率越高。反向验证显示，目标主动接近并记录时异常会暂时沉寂，可用于短时压制。",
+            "timeline": [
+              {
+                "at": "2026-10-17T15:34:43.000Z",
+                "text": "首次目击 · 太原市某大学女生宿舍报告异常征兆，值班组现场记录在案。"
+              },
+              {
+                "at": "2026-10-17T21:34:43.000Z",
+                "text": "扩散预警 · 同一区域 200 米范围内出现第二起同类目击记录，确认非孤例。"
+              },
+              {
+                "at": "2026-10-18T15:34:43.000Z",
+                "text": "总部研判 · 情报部将事件等级定为 C 级，纳入常规监控序列。"
+              },
+              {
+                "at": "2026-10-20T15:34:43.000Z",
+                "text": "观察处置 · 已布置长期观测点位，等待异常自然消散。"
+              }
+            ],
+            "handler": "第十二机动队 · 代号「冷杉」",
+            "relatedArtifacts": [
+              "裂纹罗盘",
+              "青铜铃"
+            ]
+          }
+        ],
+        "records": [
+          {
+            "id": "ev-mvcriqc236m",
+            "eventCode": "EVT-2026-1122",
+            "name": "鬼域肃清",
+            "level": "S",
+            "location": "台湾",
+            "status": "active",
+            "occurredAt": "2026-10-17T18:01:20.000Z",
+            "deathToll": 0,
+            "missingCount": 0,
+            "content": "百年乱世余孽、域外诡祟、分裂邪灵，借时局缝隙，盘踞海峡一隅。\n它们制造虚妄的“独立诡境”，编织虚假的割裂认知，以鬼魅话术蛊惑人心。",
+            "reporter": "九天应元雷声普化天尊",
+            "reporterId": "u-mvcqnuo745s",
+            "createdAt": "2026-10-17T19:01:20.000Z",
+            "reviewComment": "已受理，情报部研判中。",
+            "killingPattern": "[机密] 该异常已确认具备主动猎杀行为。目标须同时满足三个条件：夜间（23:00—04:00）独处、身处无照明封闭空间、且连续三次听见来源不明的声响。三者齐备后目标进入 72 小时危险窗口期，窗口期内任何回头确认声源方向的动作都会立即触发异常。处置建议：夜间禁止单人行动，全员佩戴三级屏蔽贴片。",
+            "timeline": [
+              {
+                "at": "2026-10-17T18:01:20.000Z",
+                "text": "首次目击 · 台湾报告高强度异常信号，值班组现场记录在案。"
+              },
+              {
+                "at": "2026-10-18T00:01:20.000Z",
+                "text": "扩散预警 · 同一区域 200 米范围内出现第二起同类目击记录，确认非孤例。"
+              },
+              {
+                "at": "2026-10-18T18:01:20.000Z",
+                "text": "总部研判 · 情报部将事件等级定为 S 级，纳入重点监控序列。"
+              },
+              {
+                "at": "2026-10-19T18:01:20.000Z",
+                "text": "封锁行动 · 机动队已进驻并设立警戒线，周边人员完成疏散。"
+              }
+            ],
+            "handler": "第九机动队 · 代号「渡鸦」",
+            "relatedArtifacts": [
+              "青铜铃"
+            ]
+          },
+          {
+            "id": "ev-mvcpp9cr3i1",
+            "eventCode": "EVT-2026-1121",
+            "name": "换皮杀人事件",
+            "level": "B",
+            "location": "重庆市城郊被封死的废弃老楼",
+            "status": "active",
+            "occurredAt": "2026-10-17T17:10:25.000Z",
+            "deathToll": 3,
+            "missingCount": 0,
+            "content": "上报时间：2021年9月23日\n\n异常现象：上报人员为两名警方人员，四日前接到了失踪报案，失踪者为一名偷偷前往废弃楼内探险的少年，二人破开封墙进入搜寻，在三楼楼道遇见了一个背对着他们的少年，体态、声音、衣着，以及转过来后的样貌，与失踪者完全匹配。\n二人并未察觉异样，带着少年离开老楼，回到少年家中。\n三天后少年父母报警，根据少年父母描述，少年回家后三天并未睡觉、吃饭、行动僵硬，没用表情波动、并且在深夜睡醒后发现少年就站在卧室门口静静的看着他们，警方通过检查以及疏导，并未发现特殊异样，随即上报。\n第四天我方人员在了解事情后前往废弃老楼探查，在四楼的一件房间内发现了人体尸块，只有骨头和血肉，没有人皮。经过拼装，大致能看出是一名年轻男子遗体，随后立即前往失踪少年家中，破门后发现少年失踪，地上遍布尸块，同样为骨头和血肉，并未发现人皮，拼装后并拿去检测，均可确定尸块为失踪少年的父母。\n事件升级，总部接管。",
+            "reporter": "白晓",
+            "reporterId": "u-mvco44fv3nm",
+            "createdAt": "2026-10-17T18:10:25.000Z",
+            "reviewComment": "已受理，情报部研判中。",
+            "killingPattern": "异常在目标情绪剧烈波动（恐惧、愧疚、强烈悔意）时响应，会复现其近期回忆中最不愿面对的场景。连续两晚出现同一场景后，异常开始外溢至周边 200 米范围。受影响人员须立即接受三级心理隔离，观察期 7 日。",
+            "timeline": [
+              {
+                "at": "2026-10-17T17:10:25.000Z",
+                "text": "首次目击 · 重庆市城郊被封死的废弃老楼报告异常征兆，值班组现场记录在案。"
+              },
+              {
+                "at": "2026-10-17T23:10:25.000Z",
+                "text": "扩散预警 · 同一区域 200 米范围内出现第二起同类目击记录，确认非孤例。"
+              },
+              {
+                "at": "2026-10-18T17:10:25.000Z",
+                "text": "总部研判 · 情报部将事件等级定为 B 级，纳入常规监控序列。"
+              },
+              {
+                "at": "2026-10-20T17:10:25.000Z",
+                "text": "观察处置 · 已布置长期观测点位，等待异常自然消散。"
+              }
+            ],
+            "handler": "区域驻防组 · 代号「折线」",
+            "relatedArtifacts": [
+              "青铜铃"
+            ]
+          },
+          {
+            "id": "ev-mvcma6l4114",
+            "eventCode": "EVT-2026-1120",
+            "name": "女生宿舍诡异梦魇",
+            "level": "C",
+            "location": "太原市某大学女生宿舍",
+            "status": "active",
+            "occurredAt": "2026-10-17T15:34:43.000Z",
+            "deathToll": 0,
+            "missingCount": 214,
+            "content": "目击时间：连续多日夜间睡眠时段\n异常现象：该高校整栋女生宿舍楼爆发群体性梦魇，多名宿生睡眠期间出现睡眠瘫痪，梦中统一目击同一黑衣男性人影；夜间可听见床边陌生呼吸声，睡前锁闭的衣柜清晨会自动出现缝隙。异象可跨楼层扩散，部分离校学生依旧会被异象纠缠，现实场景中目击该黑衣男子，但所有监控均无法捕捉目标。多名受侵扰学生逐步出现严重幻视幻听、精神崩溃，多名学生夜间冲出学校走失。溯源观测发现，群体梦魇视野内的工厂天花板，实际对应太平间停尸柜内部顶板，疑似存在跨点位的空间异常映射。\n伤亡情况：目前无人员死亡，多名宿舍当事人精神失常并多数丧失正常生活能力或走失。\n现场处置：由校内受影响人员线上上报，暂未对整栋宿舍楼实施封锁隔离；多名宿生的口述记录、宿舍及电梯监控副本已标记归档，暂未捕获异常实体影像。\n遗留风险：异常具备群体扩散、跨场景跟随特性，不受空间转移限制，实体源头暂未锁定，存在进一步扩散感染其余人员的高风险，建议对整栋宿舍楼与所有发病当事人执行长期不间断监测。",
+            "reporter": "芊甜",
+            "reporterId": "u-mvcjkuzp36h",
+            "createdAt": "2026-10-17T16:34:43.000Z",
+            "reviewComment": "已受理，情报部研判中。",
+            "killingPattern": "异常与目标的行为习惯呈负相关：目标越刻意回避，异常出现的频率越高。反向验证显示，目标主动接近并记录时异常会暂时沉寂，可用于短时压制。",
+            "timeline": [
+              {
+                "at": "2026-10-17T15:34:43.000Z",
+                "text": "首次目击 · 太原市某大学女生宿舍报告异常征兆，值班组现场记录在案。"
+              },
+              {
+                "at": "2026-10-17T21:34:43.000Z",
+                "text": "扩散预警 · 同一区域 200 米范围内出现第二起同类目击记录，确认非孤例。"
+              },
+              {
+                "at": "2026-10-18T15:34:43.000Z",
+                "text": "总部研判 · 情报部将事件等级定为 C 级，纳入常规监控序列。"
+              },
+              {
+                "at": "2026-10-20T15:34:43.000Z",
+                "text": "观察处置 · 已布置长期观测点位，等待异常自然消散。"
+              }
+            ],
+            "handler": "第十二机动队 · 代号「冷杉」",
+            "relatedArtifacts": [
+              "裂纹罗盘",
+              "青铜铃"
+            ]
+          }
+        ],
+        "total": 122,
+        "page": 1,
+        "pageSize": 3,
+        "totalPages": 41,
+        "hasMore": true
+      },
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/forum/categories",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": [
+        {
+          "id": "b-general",
+          "name": "综合讨论区",
+          "en": "General",
+          "description": "总部事务、日常交流与新人报到",
+          "sortOrder": 1,
+          "topicCount": 1343,
+          "todayCount": 96,
+          "lastPostAt": "2026-10-17"
+        },
+        {
+          "id": "b-intel",
+          "name": "情报分析室",
+          "en": "Intel",
+          "description": "事件研判、鬼域规律与档案考据",
+          "sortOrder": 2,
+          "topicCount": 937,
+          "todayCount": 22,
+          "lastPostAt": "2026-10-17"
+        },
+        {
+          "id": "b-field",
+          "name": "外勤经验帖",
+          "en": "Field",
+          "description": "任务复盘、装备使用与实战技巧",
+          "sortOrder": 3,
+          "topicCount": 743,
+          "todayCount": 16,
+          "lastPostAt": "2026-10-17"
+        },
+        {
+          "id": "b-artifact",
+          "name": "灵异物品研究",
+          "en": "Artifact",
+          "description": "鬼物的能力边界与封印方案讨论",
+          "sortOrder": 4,
+          "topicCount": 509,
+          "todayCount": 13,
+          "lastPostAt": "2026-10-15"
+        },
+        {
+          "id": "b-feedback",
+          "name": "投诉与建议",
+          "en": "Feedback",
+          "description": "对总部流程、系统功能的意见反馈",
+          "sortOrder": 5,
+          "topicCount": 215,
+          "todayCount": 9,
+          "lastPostAt": "2026-10-17"
+        }
+      ],
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/safety-rules",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "list": [
+          {
+            "id": "6e3b14a0-8df1-47fd-972b-c6ce654ff5b4",
+            "category": "daily",
+            "title": "个人防护装备要求",
+            "content": "所有外勤人员执行任务时必须穿戴标准灵异防护套装，包括：防护头盔（配护目镜）、防渗透作战服、灵能检测手环。装备每日使用前后需进行完整性检查，发现损坏立即更换。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "日常规范",
+            "summary": "所有外勤人员执行任务时必须穿戴标准灵异防护套装，包括：防护头盔（配护目镜）、防渗透作战服、灵能检测手环。装备每日使用前后…"
+          },
+          {
+            "id": "fc4b8e79-2c71-4b3f-8026-4109acae4801",
+            "category": "encounter",
+            "title": "鬼域遭遇应对流程",
+            "content": "意外遭遇鬼域时，第一时间停止移动，确认队友位置和人数。切勿深入，沿来路缓慢后撤。若退路消失，原地建立防御阵地并立即呼叫支援。严禁在未确认安全的情况下探索未知区域。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "遭遇应对",
+            "summary": "意外遭遇鬼域时，第一时间停止移动，确认队友位置和人数。切勿深入，沿来路缓慢后撤。若退路消失，原地建立防御阵地并立即呼叫支…"
+          },
+          {
+            "id": "29bfc58e-7f88-40fa-9c9e-8eccc3cb9f0a",
+            "category": "artifact",
+            "title": "灵异物品接触前检查",
+            "content": "接触任何灵异物品前，必须核实物品编号、危险等级、封印状态和使用说明。低危物品需至少一名Lv.2人员在场监督；中危及以上需两名Lv.3及以上人员监督。严禁单人接触高危及以上等级物品。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "物品使用",
+            "summary": "接触任何灵异物品前，必须核实物品编号、危险等级、封印状态和使用说明。低危物品需至少一名Lv.2人员在场监督；中危及以上需…"
+          },
+          {
+            "id": "b996ab40-008f-4d4b-b3ab-56c81d73d2a2",
+            "category": "body",
+            "title": "驭鬼者身体监测",
+            "content": "驭鬼者必须每日记录鬼力指数和身体异化程度。手指、眼睛、皮肤等部位出现异常变化时，及时向医疗组报告。鬼力指数超过安全阈值80%时，暂停一线任务进行休养。严禁强行压制异化反应。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "身体监测",
+            "summary": "驭鬼者必须每日记录鬼力指数和身体异化程度。手指、眼睛、皮肤等部位出现异常变化时，及时向医疗组报告。鬼力指数超过安全阈值8…"
+          },
+          {
+            "id": "8dceac50-abdf-403a-8c8d-a7b46f93eb64",
+            "category": "evacuation",
+            "title": "紧急撤离信号与路线",
+            "content": "各区域均设有三套以上紧急撤离路线和集结点。听到三声长警报即为撤离信号，所有人员立即停止当前任务，按预定路线撤离。撤离时保持队形，不得擅自离队，不得回头救援已被鬼域吞噬的人员。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "紧急撤离",
+            "summary": "各区域均设有三套以上紧急撤离路线和集结点。听到三声长警报即为撤离信号，所有人员立即停止当前任务，按预定路线撤离。撤离时保…"
+          },
+          {
+            "id": "89938601-0f82-4ced-8887-c75a48167aed",
+            "category": "encounter",
+            "title": "空间扭曲时的生存法则",
+            "content": "身处鬼域中感觉空间异常时，保持冷静，沿墙壁或直线标记物移动。不要相信自己的方向感，使用指南针和GPS双重定位（注意：鬼域内GPS可能失效）。若遇到重复场景，立即停下并使用灵能探测器寻找能量薄弱点。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "遭遇应对",
+            "summary": "身处鬼域中感觉空间异常时，保持冷静，沿墙壁或直线标记物移动。不要相信自己的方向感，使用指南针和GPS双重定位（注意：鬼域…"
+          },
+          {
+            "id": "800e0411-d7fd-40db-8bd5-b745a65cdb12",
+            "category": "body",
+            "title": "使用限度与冷却期",
+            "content": "每位驭鬼者每月使用自身鬼力的总时长不得超过40小时。连续作战不超过72小时，之后必须有至少48小时的完全冷却期。过度使用会导致\"同化\"现象加速，最终丧失自我意识。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "身体监测",
+            "summary": "每位驭鬼者每月使用自身鬼力的总时长不得超过40小时。连续作战不超过72小时，之后必须有至少48小时的完全冷却期。过度使用…"
+          },
+          {
+            "id": "0f697b96-e2ca-4e37-9bf5-be8c03abff41",
+            "category": "artifact",
+            "title": "使用后副作用处理",
+            "content": "使用灵异物品后，使用者需在观察室留观至少二十四小时，记录身体和精神状态变化。出现异常反应立即向科研部报告。严禁在使用高危物品后24小时内执行其他任务，副作用叠加可能导致失控。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "物品使用",
+            "summary": "使用灵异物品后，使用者需在观察室留观至少二十四小时，记录身体和精神状态变化。出现异常反应立即向科研部报告。严禁在使用高危…"
+          },
+          {
+            "id": "ca962509-fa3a-4352-b9f3-8d395abc4cec",
+            "category": "daily",
+            "title": "日常作息与心理监测",
+            "content": "一线作战人员每日睡眠时间不得少于六小时。每周需完成一次心理评估，出现失眠、幻听、异常记忆等症状须立即上报。隐瞒精神异常状态继续执行任务者，将被暂停职务并强制疗养。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "日常规范",
+            "summary": "一线作战人员每日睡眠时间不得少于六小时。每周需完成一次心理评估，出现失眠、幻听、异常记忆等症状须立即上报。隐瞒精神异常状…"
+          },
+          {
+            "id": "b9684216-f451-4479-8bdf-a1fdb5ecd622",
+            "category": "evacuation",
+            "title": "断后人员选拔与职责",
+            "content": "撤离行动中的断后人员须为自愿报名的Lv.3及以上人员，且签署知情同意书。断后队任务是掩护大部队撤离，不求生还。完成任务后若能自行脱身，可到后备集结点汇合。每支队伍必须预设断后序列。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "紧急撤离",
+            "summary": "撤离行动中的断后人员须为自愿报名的Lv.3及以上人员，且签署知情同意书。断后队任务是掩护大部队撤离，不求生还。完成任务后…"
+          },
+          {
+            "id": "5ec2f15c-5b0c-4112-8284-86f8de78e69c",
+            "category": "daily",
+            "title": "通讯设备使用规范",
+            "content": "所有任务期间必须保持通讯频道畅通，每十五分钟报告一次位置和状态。通讯受干扰时立即使用备用频道，连续三次通讯中断视为失联，后援队即刻出发。禁止在任务中使用私人通讯设备。",
+            "sortOrder": 3,
+            "requiredPermission": 1,
+            "categoryName": "日常规范",
+            "summary": "所有任务期间必须保持通讯频道畅通，每十五分钟报告一次位置和状态。通讯受干扰时立即使用备用频道，连续三次通讯中断视为失联，…"
+          },
+          {
+            "id": "873a35c5-da31-431f-9601-193f8293eb53",
+            "category": "artifact",
+            "title": "物品保管与交接规范",
+            "content": "灵异物品出入库必须双人双锁，交接时双方当面清点确认状态并签字。物品归还后必须重新进行封印完整性检测，确认无误后方可入库。发现物品状态异常或损坏，立即启动收容失效预案。",
+            "sortOrder": 3,
+            "requiredPermission": 1,
+            "categoryName": "物品使用",
+            "summary": "灵异物品出入库必须双人双锁，交接时双方当面清点确认状态并签字。物品归还后必须重新进行封印完整性检测，确认无误后方可入库。…"
+          },
+          {
+            "id": "15af0d38-0294-465f-9a58-d21f9f8dc435",
+            "category": "encounter",
+            "title": "直面鬼物的禁忌",
+            "content": "与鬼物正面遭遇时，绝对禁止以下行为：一、直视鬼物眼睛超过三秒；二、回应鬼物的任何问话或呼唤；三、接受鬼物递来的任何物品；四、模仿鬼物的动作或声音。违反上述任何一条，死亡率超过90%。",
+            "sortOrder": 3,
+            "requiredPermission": 1,
+            "categoryName": "遭遇应对",
+            "summary": "与鬼物正面遭遇时，绝对禁止以下行为：一、直视鬼物眼睛超过三秒；二、回应鬼物的任何问话或呼唤；三、接受鬼物递来的任何物品；…"
+          }
+        ],
+        "items": [
+          {
+            "id": "6e3b14a0-8df1-47fd-972b-c6ce654ff5b4",
+            "category": "daily",
+            "title": "个人防护装备要求",
+            "content": "所有外勤人员执行任务时必须穿戴标准灵异防护套装，包括：防护头盔（配护目镜）、防渗透作战服、灵能检测手环。装备每日使用前后需进行完整性检查，发现损坏立即更换。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "日常规范",
+            "summary": "所有外勤人员执行任务时必须穿戴标准灵异防护套装，包括：防护头盔（配护目镜）、防渗透作战服、灵能检测手环。装备每日使用前后…"
+          },
+          {
+            "id": "fc4b8e79-2c71-4b3f-8026-4109acae4801",
+            "category": "encounter",
+            "title": "鬼域遭遇应对流程",
+            "content": "意外遭遇鬼域时，第一时间停止移动，确认队友位置和人数。切勿深入，沿来路缓慢后撤。若退路消失，原地建立防御阵地并立即呼叫支援。严禁在未确认安全的情况下探索未知区域。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "遭遇应对",
+            "summary": "意外遭遇鬼域时，第一时间停止移动，确认队友位置和人数。切勿深入，沿来路缓慢后撤。若退路消失，原地建立防御阵地并立即呼叫支…"
+          },
+          {
+            "id": "29bfc58e-7f88-40fa-9c9e-8eccc3cb9f0a",
+            "category": "artifact",
+            "title": "灵异物品接触前检查",
+            "content": "接触任何灵异物品前，必须核实物品编号、危险等级、封印状态和使用说明。低危物品需至少一名Lv.2人员在场监督；中危及以上需两名Lv.3及以上人员监督。严禁单人接触高危及以上等级物品。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "物品使用",
+            "summary": "接触任何灵异物品前，必须核实物品编号、危险等级、封印状态和使用说明。低危物品需至少一名Lv.2人员在场监督；中危及以上需…"
+          },
+          {
+            "id": "b996ab40-008f-4d4b-b3ab-56c81d73d2a2",
+            "category": "body",
+            "title": "驭鬼者身体监测",
+            "content": "驭鬼者必须每日记录鬼力指数和身体异化程度。手指、眼睛、皮肤等部位出现异常变化时，及时向医疗组报告。鬼力指数超过安全阈值80%时，暂停一线任务进行休养。严禁强行压制异化反应。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "身体监测",
+            "summary": "驭鬼者必须每日记录鬼力指数和身体异化程度。手指、眼睛、皮肤等部位出现异常变化时，及时向医疗组报告。鬼力指数超过安全阈值8…"
+          },
+          {
+            "id": "8dceac50-abdf-403a-8c8d-a7b46f93eb64",
+            "category": "evacuation",
+            "title": "紧急撤离信号与路线",
+            "content": "各区域均设有三套以上紧急撤离路线和集结点。听到三声长警报即为撤离信号，所有人员立即停止当前任务，按预定路线撤离。撤离时保持队形，不得擅自离队，不得回头救援已被鬼域吞噬的人员。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "紧急撤离",
+            "summary": "各区域均设有三套以上紧急撤离路线和集结点。听到三声长警报即为撤离信号，所有人员立即停止当前任务，按预定路线撤离。撤离时保…"
+          },
+          {
+            "id": "89938601-0f82-4ced-8887-c75a48167aed",
+            "category": "encounter",
+            "title": "空间扭曲时的生存法则",
+            "content": "身处鬼域中感觉空间异常时，保持冷静，沿墙壁或直线标记物移动。不要相信自己的方向感，使用指南针和GPS双重定位（注意：鬼域内GPS可能失效）。若遇到重复场景，立即停下并使用灵能探测器寻找能量薄弱点。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "遭遇应对",
+            "summary": "身处鬼域中感觉空间异常时，保持冷静，沿墙壁或直线标记物移动。不要相信自己的方向感，使用指南针和GPS双重定位（注意：鬼域…"
+          },
+          {
+            "id": "800e0411-d7fd-40db-8bd5-b745a65cdb12",
+            "category": "body",
+            "title": "使用限度与冷却期",
+            "content": "每位驭鬼者每月使用自身鬼力的总时长不得超过40小时。连续作战不超过72小时，之后必须有至少48小时的完全冷却期。过度使用会导致\"同化\"现象加速，最终丧失自我意识。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "身体监测",
+            "summary": "每位驭鬼者每月使用自身鬼力的总时长不得超过40小时。连续作战不超过72小时，之后必须有至少48小时的完全冷却期。过度使用…"
+          },
+          {
+            "id": "0f697b96-e2ca-4e37-9bf5-be8c03abff41",
+            "category": "artifact",
+            "title": "使用后副作用处理",
+            "content": "使用灵异物品后，使用者需在观察室留观至少二十四小时，记录身体和精神状态变化。出现异常反应立即向科研部报告。严禁在使用高危物品后24小时内执行其他任务，副作用叠加可能导致失控。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "物品使用",
+            "summary": "使用灵异物品后，使用者需在观察室留观至少二十四小时，记录身体和精神状态变化。出现异常反应立即向科研部报告。严禁在使用高危…"
+          },
+          {
+            "id": "ca962509-fa3a-4352-b9f3-8d395abc4cec",
+            "category": "daily",
+            "title": "日常作息与心理监测",
+            "content": "一线作战人员每日睡眠时间不得少于六小时。每周需完成一次心理评估，出现失眠、幻听、异常记忆等症状须立即上报。隐瞒精神异常状态继续执行任务者，将被暂停职务并强制疗养。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "日常规范",
+            "summary": "一线作战人员每日睡眠时间不得少于六小时。每周需完成一次心理评估，出现失眠、幻听、异常记忆等症状须立即上报。隐瞒精神异常状…"
+          },
+          {
+            "id": "b9684216-f451-4479-8bdf-a1fdb5ecd622",
+            "category": "evacuation",
+            "title": "断后人员选拔与职责",
+            "content": "撤离行动中的断后人员须为自愿报名的Lv.3及以上人员，且签署知情同意书。断后队任务是掩护大部队撤离，不求生还。完成任务后若能自行脱身，可到后备集结点汇合。每支队伍必须预设断后序列。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "紧急撤离",
+            "summary": "撤离行动中的断后人员须为自愿报名的Lv.3及以上人员，且签署知情同意书。断后队任务是掩护大部队撤离，不求生还。完成任务后…"
+          },
+          {
+            "id": "5ec2f15c-5b0c-4112-8284-86f8de78e69c",
+            "category": "daily",
+            "title": "通讯设备使用规范",
+            "content": "所有任务期间必须保持通讯频道畅通，每十五分钟报告一次位置和状态。通讯受干扰时立即使用备用频道，连续三次通讯中断视为失联，后援队即刻出发。禁止在任务中使用私人通讯设备。",
+            "sortOrder": 3,
+            "requiredPermission": 1,
+            "categoryName": "日常规范",
+            "summary": "所有任务期间必须保持通讯频道畅通，每十五分钟报告一次位置和状态。通讯受干扰时立即使用备用频道，连续三次通讯中断视为失联，…"
+          },
+          {
+            "id": "873a35c5-da31-431f-9601-193f8293eb53",
+            "category": "artifact",
+            "title": "物品保管与交接规范",
+            "content": "灵异物品出入库必须双人双锁，交接时双方当面清点确认状态并签字。物品归还后必须重新进行封印完整性检测，确认无误后方可入库。发现物品状态异常或损坏，立即启动收容失效预案。",
+            "sortOrder": 3,
+            "requiredPermission": 1,
+            "categoryName": "物品使用",
+            "summary": "灵异物品出入库必须双人双锁，交接时双方当面清点确认状态并签字。物品归还后必须重新进行封印完整性检测，确认无误后方可入库。…"
+          },
+          {
+            "id": "15af0d38-0294-465f-9a58-d21f9f8dc435",
+            "category": "encounter",
+            "title": "直面鬼物的禁忌",
+            "content": "与鬼物正面遭遇时，绝对禁止以下行为：一、直视鬼物眼睛超过三秒；二、回应鬼物的任何问话或呼唤；三、接受鬼物递来的任何物品；四、模仿鬼物的动作或声音。违反上述任何一条，死亡率超过90%。",
+            "sortOrder": 3,
+            "requiredPermission": 1,
+            "categoryName": "遭遇应对",
+            "summary": "与鬼物正面遭遇时，绝对禁止以下行为：一、直视鬼物眼睛超过三秒；二、回应鬼物的任何问话或呼唤；三、接受鬼物递来的任何物品；…"
+          }
+        ],
+        "records": [
+          {
+            "id": "6e3b14a0-8df1-47fd-972b-c6ce654ff5b4",
+            "category": "daily",
+            "title": "个人防护装备要求",
+            "content": "所有外勤人员执行任务时必须穿戴标准灵异防护套装，包括：防护头盔（配护目镜）、防渗透作战服、灵能检测手环。装备每日使用前后需进行完整性检查，发现损坏立即更换。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "日常规范",
+            "summary": "所有外勤人员执行任务时必须穿戴标准灵异防护套装，包括：防护头盔（配护目镜）、防渗透作战服、灵能检测手环。装备每日使用前后…"
+          },
+          {
+            "id": "fc4b8e79-2c71-4b3f-8026-4109acae4801",
+            "category": "encounter",
+            "title": "鬼域遭遇应对流程",
+            "content": "意外遭遇鬼域时，第一时间停止移动，确认队友位置和人数。切勿深入，沿来路缓慢后撤。若退路消失，原地建立防御阵地并立即呼叫支援。严禁在未确认安全的情况下探索未知区域。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "遭遇应对",
+            "summary": "意外遭遇鬼域时，第一时间停止移动，确认队友位置和人数。切勿深入，沿来路缓慢后撤。若退路消失，原地建立防御阵地并立即呼叫支…"
+          },
+          {
+            "id": "29bfc58e-7f88-40fa-9c9e-8eccc3cb9f0a",
+            "category": "artifact",
+            "title": "灵异物品接触前检查",
+            "content": "接触任何灵异物品前，必须核实物品编号、危险等级、封印状态和使用说明。低危物品需至少一名Lv.2人员在场监督；中危及以上需两名Lv.3及以上人员监督。严禁单人接触高危及以上等级物品。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "物品使用",
+            "summary": "接触任何灵异物品前，必须核实物品编号、危险等级、封印状态和使用说明。低危物品需至少一名Lv.2人员在场监督；中危及以上需…"
+          },
+          {
+            "id": "b996ab40-008f-4d4b-b3ab-56c81d73d2a2",
+            "category": "body",
+            "title": "驭鬼者身体监测",
+            "content": "驭鬼者必须每日记录鬼力指数和身体异化程度。手指、眼睛、皮肤等部位出现异常变化时，及时向医疗组报告。鬼力指数超过安全阈值80%时，暂停一线任务进行休养。严禁强行压制异化反应。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "身体监测",
+            "summary": "驭鬼者必须每日记录鬼力指数和身体异化程度。手指、眼睛、皮肤等部位出现异常变化时，及时向医疗组报告。鬼力指数超过安全阈值8…"
+          },
+          {
+            "id": "8dceac50-abdf-403a-8c8d-a7b46f93eb64",
+            "category": "evacuation",
+            "title": "紧急撤离信号与路线",
+            "content": "各区域均设有三套以上紧急撤离路线和集结点。听到三声长警报即为撤离信号，所有人员立即停止当前任务，按预定路线撤离。撤离时保持队形，不得擅自离队，不得回头救援已被鬼域吞噬的人员。",
+            "sortOrder": 1,
+            "requiredPermission": 1,
+            "categoryName": "紧急撤离",
+            "summary": "各区域均设有三套以上紧急撤离路线和集结点。听到三声长警报即为撤离信号，所有人员立即停止当前任务，按预定路线撤离。撤离时保…"
+          },
+          {
+            "id": "89938601-0f82-4ced-8887-c75a48167aed",
+            "category": "encounter",
+            "title": "空间扭曲时的生存法则",
+            "content": "身处鬼域中感觉空间异常时，保持冷静，沿墙壁或直线标记物移动。不要相信自己的方向感，使用指南针和GPS双重定位（注意：鬼域内GPS可能失效）。若遇到重复场景，立即停下并使用灵能探测器寻找能量薄弱点。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "遭遇应对",
+            "summary": "身处鬼域中感觉空间异常时，保持冷静，沿墙壁或直线标记物移动。不要相信自己的方向感，使用指南针和GPS双重定位（注意：鬼域…"
+          },
+          {
+            "id": "800e0411-d7fd-40db-8bd5-b745a65cdb12",
+            "category": "body",
+            "title": "使用限度与冷却期",
+            "content": "每位驭鬼者每月使用自身鬼力的总时长不得超过40小时。连续作战不超过72小时，之后必须有至少48小时的完全冷却期。过度使用会导致\"同化\"现象加速，最终丧失自我意识。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "身体监测",
+            "summary": "每位驭鬼者每月使用自身鬼力的总时长不得超过40小时。连续作战不超过72小时，之后必须有至少48小时的完全冷却期。过度使用…"
+          },
+          {
+            "id": "0f697b96-e2ca-4e37-9bf5-be8c03abff41",
+            "category": "artifact",
+            "title": "使用后副作用处理",
+            "content": "使用灵异物品后，使用者需在观察室留观至少二十四小时，记录身体和精神状态变化。出现异常反应立即向科研部报告。严禁在使用高危物品后24小时内执行其他任务，副作用叠加可能导致失控。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "物品使用",
+            "summary": "使用灵异物品后，使用者需在观察室留观至少二十四小时，记录身体和精神状态变化。出现异常反应立即向科研部报告。严禁在使用高危…"
+          },
+          {
+            "id": "ca962509-fa3a-4352-b9f3-8d395abc4cec",
+            "category": "daily",
+            "title": "日常作息与心理监测",
+            "content": "一线作战人员每日睡眠时间不得少于六小时。每周需完成一次心理评估，出现失眠、幻听、异常记忆等症状须立即上报。隐瞒精神异常状态继续执行任务者，将被暂停职务并强制疗养。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "日常规范",
+            "summary": "一线作战人员每日睡眠时间不得少于六小时。每周需完成一次心理评估，出现失眠、幻听、异常记忆等症状须立即上报。隐瞒精神异常状…"
+          },
+          {
+            "id": "b9684216-f451-4479-8bdf-a1fdb5ecd622",
+            "category": "evacuation",
+            "title": "断后人员选拔与职责",
+            "content": "撤离行动中的断后人员须为自愿报名的Lv.3及以上人员，且签署知情同意书。断后队任务是掩护大部队撤离，不求生还。完成任务后若能自行脱身，可到后备集结点汇合。每支队伍必须预设断后序列。",
+            "sortOrder": 2,
+            "requiredPermission": 1,
+            "categoryName": "紧急撤离",
+            "summary": "撤离行动中的断后人员须为自愿报名的Lv.3及以上人员，且签署知情同意书。断后队任务是掩护大部队撤离，不求生还。完成任务后…"
+          },
+          {
+            "id": "5ec2f15c-5b0c-4112-8284-86f8de78e69c",
+            "category": "daily",
+            "title": "通讯设备使用规范",
+            "content": "所有任务期间必须保持通讯频道畅通，每十五分钟报告一次位置和状态。通讯受干扰时立即使用备用频道，连续三次通讯中断视为失联，后援队即刻出发。禁止在任务中使用私人通讯设备。",
+            "sortOrder": 3,
+            "requiredPermission": 1,
+            "categoryName": "日常规范",
+            "summary": "所有任务期间必须保持通讯频道畅通，每十五分钟报告一次位置和状态。通讯受干扰时立即使用备用频道，连续三次通讯中断视为失联，…"
+          },
+          {
+            "id": "873a35c5-da31-431f-9601-193f8293eb53",
+            "category": "artifact",
+            "title": "物品保管与交接规范",
+            "content": "灵异物品出入库必须双人双锁，交接时双方当面清点确认状态并签字。物品归还后必须重新进行封印完整性检测，确认无误后方可入库。发现物品状态异常或损坏，立即启动收容失效预案。",
+            "sortOrder": 3,
+            "requiredPermission": 1,
+            "categoryName": "物品使用",
+            "summary": "灵异物品出入库必须双人双锁，交接时双方当面清点确认状态并签字。物品归还后必须重新进行封印完整性检测，确认无误后方可入库。…"
+          },
+          {
+            "id": "15af0d38-0294-465f-9a58-d21f9f8dc435",
+            "category": "encounter",
+            "title": "直面鬼物的禁忌",
+            "content": "与鬼物正面遭遇时，绝对禁止以下行为：一、直视鬼物眼睛超过三秒；二、回应鬼物的任何问话或呼唤；三、接受鬼物递来的任何物品；四、模仿鬼物的动作或声音。违反上述任何一条，死亡率超过90%。",
+            "sortOrder": 3,
+            "requiredPermission": 1,
+            "categoryName": "遭遇应对",
+            "summary": "与鬼物正面遭遇时，绝对禁止以下行为：一、直视鬼物眼睛超过三秒；二、回应鬼物的任何问话或呼唤；三、接受鬼物递来的任何物品；…"
+          }
+        ],
+        "total": 13,
+        "page": 1,
+        "pageSize": 100,
+        "totalPages": 1,
+        "hasMore": false
+      },
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/broadcast/latest",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "id": "br-001",
+        "code": "NO.BR-2026-034",
+        "level": "supreme",
+        "title": "第 7 号最高指令：鬼域边界全域封控",
+        "author": "总部秘书处",
+        "time": "T-3h",
+        "content": "经最高会议决议，即日起对所有已确认鬼域边界实施全域封控。\n\n一、各区域负责人须在 24 小时内回执确认，未回执者视为失联，将启动应急接管程序。\n二、所有 Lv.3 以上人员进入待命状态，禁止未经审批的单独外勤行动。\n三、接触 S 级及以上鬼物的人员，须在 72 小时内完成记忆审查。\n四、后勤部同步清点黄金压制装备库存，做到账实相符。\n\n本指令自发布之时生效，解除时间另行通告。"
+      },
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/daily-briefings/latest",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "no": "NO.BR-2026-034",
+        "dayOffset": 0,
+        "status": "已发布",
+        "title": "总部每日简报 NO.BR-2026-034",
+        "kpi": {
+          "events": 7,
+          "missions": 12,
+          "zones": 56,
+          "alert": 2
+        },
+        "sections": [
+          {
+            "h": "一、今日事件概览",
+            "items": [
+              {
+                "tg": "高危",
+                "cls": "hi",
+                "t": "亚洲区第三号鬼域边界推进至半径十七公里，较昨日增加 1.2 公里。"
+              },
+              {
+                "tg": "中危",
+                "cls": "mid",
+                "t": "上海浦东出现两起疑似鬼报纸预告对应事件，外勤已布控。"
+              },
+              {
+                "tg": "低危",
+                "cls": "lo",
+                "t": "欧洲区多瑙河沿岸低温气流监测持续，暂未发现鬼物实体。"
+              },
+              {
+                "tg": "低危",
+                "cls": "lo",
+                "t": "大洋洲区海域监测设备全部上线，数据接入正常。"
+              }
+            ]
+          },
+          {
+            "h": "二、任务执行动态",
+            "items": [
+              {
+                "tg": "进行中",
+                "cls": "lo",
+                "t": "在办任务 12 项，其中 3 项进入提交审核阶段。"
+              },
+              {
+                "tg": "已完成",
+                "cls": "lo",
+                "t": "昨日结案 4 项，含「开学鬼」事件档案归档。"
+              },
+              {
+                "tg": "待接取",
+                "cls": "mid",
+                "t": "新下发任务 5 项，优先等级均为 中，请相关分队及时接取。"
+              }
+            ]
+          },
+          {
+            "h": "三、区域态势",
+            "items": [
+              {
+                "tg": "亚洲",
+                "cls": "hi",
+                "t": "亚洲区压力指数最高，建议增派外勤轮值。"
+              },
+              {
+                "tg": "欧洲",
+                "cls": "mid",
+                "t": "欧洲区出现异常气流，情报部研判中。"
+              },
+              {
+                "tg": "非洲",
+                "cls": "lo",
+                "t": "非洲区本月无新事件上报，档案系统已完成归档。"
+              },
+              {
+                "tg": "美洲",
+                "cls": "lo",
+                "t": "美洲区时区差异，非值班时段以留言为主。"
+              }
+            ]
+          },
+          {
+            "h": "四、总部通告",
+            "items": [
+              {
+                "tg": "最高指令",
+                "cls": "hi",
+                "t": "第 7 号最高指令已下发，各区域须在 24 小时内回执。"
+              },
+              {
+                "tg": "后勤",
+                "cls": "lo",
+                "t": "黄金压制装备补给已入库，各队可按需申领。"
+              },
+              {
+                "tg": "人事",
+                "cls": "lo",
+                "t": "本月新增人员 6 名，已完成安全培训与记忆备案。"
+              }
+            ]
+          }
+        ]
+      },
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/leaderboard?pageSize=3",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "list": [
+          {
+            "rank": 1,
+            "name": "杨间",
+            "level": "Lv.5",
+            "levelClass": "danger",
+            "exp": 9800,
+            "missions": 40,
+            "bio": "全球灵异事件处理总部·亚洲区负责人·S级驭鬼者",
+            "avatarText": "杨",
+            "region": "S级驭鬼者",
+            "uid": "u-0001",
+            "username": "yangjian"
+          },
+          {
+            "name": "冯财",
+            "level": "Lv.2",
+            "levelClass": "muted",
+            "exp": 900,
+            "missions": 0,
+            "bio": "南传茅山白莲真心教弟子，可接私活。",
+            "region": "见习外勤",
+            "avatarText": "冯",
+            "uid": "u-mv9ucrqt2s4",
+            "username": "fengcai",
+            "registered": true,
+            "rank": 2
+          },
+          {
+            "name": "法三金",
+            "level": "Lv.1",
+            "levelClass": "muted",
+            "exp": 380,
+            "missions": 0,
+            "bio": "新注册成员，等待完成首次任务考核。",
+            "region": "见习外勤",
+            "avatarText": "法",
+            "uid": "u-mv9urjdy2e9",
+            "username": "1158002954",
+            "registered": true,
+            "rank": 3
+          }
+        ],
+        "items": [
+          {
+            "rank": 1,
+            "name": "杨间",
+            "level": "Lv.5",
+            "levelClass": "danger",
+            "exp": 9800,
+            "missions": 40,
+            "bio": "全球灵异事件处理总部·亚洲区负责人·S级驭鬼者",
+            "avatarText": "杨",
+            "region": "S级驭鬼者",
+            "uid": "u-0001",
+            "username": "yangjian"
+          },
+          {
+            "name": "冯财",
+            "level": "Lv.2",
+            "levelClass": "muted",
+            "exp": 900,
+            "missions": 0,
+            "bio": "南传茅山白莲真心教弟子，可接私活。",
+            "region": "见习外勤",
+            "avatarText": "冯",
+            "uid": "u-mv9ucrqt2s4",
+            "username": "fengcai",
+            "registered": true,
+            "rank": 2
+          },
+          {
+            "name": "法三金",
+            "level": "Lv.1",
+            "levelClass": "muted",
+            "exp": 380,
+            "missions": 0,
+            "bio": "新注册成员，等待完成首次任务考核。",
+            "region": "见习外勤",
+            "avatarText": "法",
+            "uid": "u-mv9urjdy2e9",
+            "username": "1158002954",
+            "registered": true,
+            "rank": 3
+          }
+        ],
+        "records": [
+          {
+            "rank": 1,
+            "name": "杨间",
+            "level": "Lv.5",
+            "levelClass": "danger",
+            "exp": 9800,
+            "missions": 40,
+            "bio": "全球灵异事件处理总部·亚洲区负责人·S级驭鬼者",
+            "avatarText": "杨",
+            "region": "S级驭鬼者",
+            "uid": "u-0001",
+            "username": "yangjian"
+          },
+          {
+            "name": "冯财",
+            "level": "Lv.2",
+            "levelClass": "muted",
+            "exp": 900,
+            "missions": 0,
+            "bio": "南传茅山白莲真心教弟子，可接私活。",
+            "region": "见习外勤",
+            "avatarText": "冯",
+            "uid": "u-mv9ucrqt2s4",
+            "username": "fengcai",
+            "registered": true,
+            "rank": 2
+          },
+          {
+            "name": "法三金",
+            "level": "Lv.1",
+            "levelClass": "muted",
+            "exp": 380,
+            "missions": 0,
+            "bio": "新注册成员，等待完成首次任务考核。",
+            "region": "见习外勤",
+            "avatarText": "法",
+            "uid": "u-mv9urjdy2e9",
+            "username": "1158002954",
+            "registered": true,
+            "rank": 3
+          }
+        ],
+        "total": 1412,
+        "page": 1,
+        "pageSize": 3,
+        "totalPages": 471,
+        "hasMore": true
+      },
+      "message": "success"
+    }
+  },
+  {
+    "path": "/api/secretariat/info",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "name": "全球灵异事件处理总部",
+        "enName": "Global Headquarters",
+        "code": "G.H.Q.",
+        "director": "陈默",
+        "viceDirector": "杨间",
+        "establishedAt": "1998-04-01",
+        "regionCount": 5,
+        "branchCount": 32,
+        "staffCount": 2841,
+        "hotlineInternal": "8600",
+        "hotlineEmergency": "8611",
+        "email": "secretariat@ghq.ghost",
+        "address": "总部指挥中心 · 中枢塔 36F",
+        "dutyOfficer": "值班室 · 三班轮值",
+        "motto": "知晓者生，不知晓者存。",
+        "updatedAt": "2026-10-09T16:30:00.000Z"
+      },
+      "message": "success"
+    }
+  }
+]
